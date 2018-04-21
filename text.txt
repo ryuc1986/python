@@ -1,0 +1,50 @@
+pkgmgmt:pip 
+format:wheel
+
+pkgmgmt:easy_install
+format:eggs
+
+python -m timeit -s "import re" "re.match('bc','abc')"
+
+import A from B
+import A as B
+
+import datetime
+datetime.datetime()
+datetime.datetime.now()
+
+dateutil.relativedelta.relativedelta(day=10)
+
+import pickle
+ pickle.dump
+ pickle.load
+
+import json
+ json.dump
+ json.load
+
+import lxml
+import csv
+ csv.reader()
+ csv.writer()
+ writer=csv.writer.writerow([1,'hiro'])
+import openpyxl
+
+import sqlite3
+import MySQLite3
+ conection = sqlite3.connect('temp.db')
+ cursor = connection.cursor()
+ cursor.execute("""create table products (name text,price integer);""")
+ connection.commit()
+ print(cursor.fechall())
+ 
+import urllib.request,urllib.error
+ response = urllib.request.urlopen('http://yahoo.co.jp')
+ content = response.read()
+ content
+ headers = response.info()
+ headers['content-type']
+
+
+
+
